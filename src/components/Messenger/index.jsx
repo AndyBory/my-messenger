@@ -24,8 +24,9 @@ class Messenger extends React.Component {
         <h1>My messenger</h1>
         <p>User name: {name}</p>
         <p>Message: {message}</p>
+        <p>{isReading && 'Message has been read'} </p>
         <button disabled={isReading} onClick={this.click}>
-          {isReading ? 'Have read' : 'Read'}</button>
+          {isReading ? 'Message has been read' : 'Read'}</button>
       </article>
     );
   }
